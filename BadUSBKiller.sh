@@ -1,6 +1,6 @@
 lsusb>devices
 while read p; do
-  if [[ "$p" == *"MOUSE"* ]]; then
+  if [[ "$p" == *"Digispark"* ]]; then
   	val=$(sed -e 's/Bus \([0-9]\+\) Device \([0-9]\+\).*/\1\/\2/g' <<< $p)
   fi
 done < devices
